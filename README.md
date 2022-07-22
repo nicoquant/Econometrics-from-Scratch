@@ -9,3 +9,5 @@ One can find code (built from scratch) to fit the data to a model from the ARMA 
 # SolvingLinearSystems.py 
 
 One can find a script to solve a linear system using the Cholesky decomposition method.The program is not efficient (the running time for high dimentional matrix is high).
+
+Note: I am aware that errors/ wrong implementations are possible and I please you to send me an email if you notice an (some) error(s). It would be very helpful, and will help me to improve myself. Here is my mail address: nicolas.manelli013@gmail.com
