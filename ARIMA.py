@@ -10,12 +10,6 @@ from statsmodels.tsa.stattools import adfuller
 from statsmodels.tsa.arima.model import ARIMA
 from scipy.optimize import minimize
 
-
-ibm = yf.Ticker("IBM").history(period="5y").Close.to_numpy()[0:1000]
-train = ibm[0 : int(len(ibm) / 2)]
-test = ibm[int(len(ibm) / 2) :]
-
-
 class ARMA:
     def __init__(self, serie, order):
 
@@ -277,6 +271,10 @@ class ARMA:
 
 
 if __name__ == "__main__":
+    
+    ibm = yf.Ticker("IBM").history(period="5y").Close.to_numpy()[0:1000]
+    train = ibm[0 : int(len(ibm) / 2)]
+    test = ibm[int(len(ibm) / 2) :]
 
     est = ARMA(train, order=(1, 2))
     est.stationarity_check()
