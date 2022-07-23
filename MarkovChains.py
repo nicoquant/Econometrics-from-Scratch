@@ -57,6 +57,9 @@ class HiddenMarkov(MarkovChains):
         return np.sum(alpha[-1, :])
 
     def find_most_likely_state(self, list_of_hidden_state):
+        '''
+        Brute force method: Soon be updated for the Viterbi algorithm
+        '''
         self.proba_each_state = list(map(self.forward_algo,list_of_hidden_state))
 
         self.proba_most_likely_state = max(self.proba_each_state)
