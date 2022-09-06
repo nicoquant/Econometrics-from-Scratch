@@ -3,7 +3,7 @@ import yfinance as yf
 from scipy.optimize import minimize
 
 
-class Garch_my:
+class Garch_11:
 
     def __init__(self, residu):
 
@@ -40,7 +40,7 @@ ibm = yf.download('BTC', start = '2018-01-01', interval = '1d').Close.to_numpy()
 st = np.array(np.log(ibm) - np.log(ibm).mean())
 
 serie = np.diff(st)
-est = Garch_my(serie)
+est = Garch_11(serie)
 
 esti = est.garch_estimation([0.1, 0.1, 0.75])
 
