@@ -12,7 +12,7 @@ class Garch_11:
 
     def garch(self, params):
 
-        omega = params[0]/100
+        omega = params[0]#/100
         alpha = params[1]
         beta = params[2]
 
@@ -32,6 +32,7 @@ class Garch_11:
 
     def garch_estimation(self, params):
         cons = ({'type': 'ineq', 'fun': lambda x: 1 - x[1] - x[2]})
+        params[0] = params[0] / 100 # rescaling the omega
         return minimize(self.loglikelihood, params, constraints = cons, bounds= ((0.0, 1000), (0.0,1000), (0.0,1000))).x
 
 ibm = yf.download('AAPL', start = '2018-01-01', interval = '1d').Close.to_numpy()
@@ -41,7 +42,7 @@ serie = np.diff(st)
 
 est = Garch_11(serie)
 esti = est.garch_estimation([0.02, 0.1, 0.7])
-esti[0] = esti[0]/100 # rescaling the omega
+
 
 # model de référence
 am = arch_model(serie)
