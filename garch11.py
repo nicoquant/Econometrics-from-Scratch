@@ -12,7 +12,7 @@ class Garch_11:
 
     def garch(self, params):
 
-        omega = params[0]#/100
+        omega = params[0]
         alpha = params[1]
         beta = params[2]
 
