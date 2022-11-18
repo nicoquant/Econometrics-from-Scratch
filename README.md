@@ -1,4 +1,4 @@
-# Econometrics
+# Econometrics & Statistics
 Econometrics models from scratch
 
 
@@ -19,8 +19,8 @@ The script will be updated until the replication of the results found in: Stock 
 
 One can find a garch(1,1) model. It will be extended to a garch(p,q) soon.
 
-Note: I am aware that errors/ wrong implementations are possible and I please you to send me an email if you notice an (some) error(s). It would be very helpful, and will help me to improve myself. Here is my mail address: nicolas.manelli013@gmail.com
-
 # PCA.py
 
 This implementation of PCA comes from the paper The JK method (H. F. Kaiser, 1971).
+
+Note: I am aware that errors/ wrong implementations are possible and I please you to send me an email if you notice an (some) error(s). It would be very helpful, and will help me to improve myself. Here is my mail address: nicolas.manelli013@gmail.com
