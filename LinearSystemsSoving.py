@@ -53,6 +53,19 @@ class LinearSystemsSolver:
             x[i] = (y[i] - sum([upper[i, j] * x[j] for j in range(i + 1, len(x))])) / upper[i, i]
 
         return x
+    
+    def solver2(self, vector):
+        if len(vector) != len(self.A):
+            raise ValueError(
+                "Vector output does not have the same length as the matrix"
+            )
+
+        lower = self.decomposition()
+        upper = lower.copy().T
+        y = np.linalg.inv(lower) @ b
+        x = np.linalg.inv(upper) @ y
+        
+        return x
 
 if __name__ == '__main__':
     A = np.array([1,2,0,0,2,6,-2,0,0,-2,5,-2,0,0,-2,3]).reshape(4, 4)
@@ -61,5 +74,6 @@ if __name__ == '__main__':
     met = LinearSystemsSolver(A)
     #ch = met.decomposition()
     x = met.solver(b)
+    xx = met.solver2(b)
     print(np.linalg.solve(A, b))
 
