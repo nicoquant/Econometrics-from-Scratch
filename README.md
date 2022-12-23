@@ -1,6 +1,8 @@
 # Econometrics & Statistics
 Econometrics models from scratch
 
+# LinearRegression.py
+This file show how to implement a linear regression from scratch using gradient decent as well as the closed formula. 
 
 # ARIMA Models.py
 
@@ -8,7 +10,7 @@ One can find code (built from scratch) to fit the data to a model from the ARMA 
 
 # SolvingLinearSystems.py 
 
-One can find a script to solve a linear system using the Cholesky decomposition method.
+This script show how to implement a solver of linear systems using the Cholesky decomposition method.
 
 # MarkovChains.py
 
@@ -17,10 +19,15 @@ The script will be updated until the replication of the results found in: Stock 
 
 # garch11.py
 
-One can find a garch(1,1) model. It will be extended to a garch(p,q) soon.
+This script show the implementation of a garch(1,1) model. The extention to a garch(p,q) have been made and will soon be released.
 
 # PCA.py
 
 This implementation of PCA comes from the paper The JK method (H. F. Kaiser, 1971).
 
+Incomming soon: 
+  - Decision Tree
+  - Random Forest
+  - Gradient Bossting for classification
+  
 Note: I am aware that errors/ wrong implementations are possible and I please you to send me an email if you notice an (some) error(s). It would be very helpful, and will help me to improve myself. Here is my mail address: nicolas.manelli013@gmail.com
