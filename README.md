@@ -25,7 +25,7 @@ This script show the implementation of a garch(1,1) model. The extention to a ga
 
 This implementation of PCA comes from the paper The JK method (H. F. Kaiser, 1971).
 
-Incomming soon: 
+# Incomming soon: 
   - Decision Tree
   - Random Forest
   - Gradient Bossting for classification
