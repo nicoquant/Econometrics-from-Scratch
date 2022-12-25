@@ -1,8 +1,9 @@
 # Econometrics & Statistics
 Econometrics models from scratch
 
-# LinearRegression.py
-This file show how to implement a linear regression from scratch using gradient decent as well as the closed formula. 
+# Linear_models.py
+In this file, you will find an interpretation using the gradient descent technic to estimate and predict using linear, lasso and ridge regression. 
+For the linear and ridge regression, you'll also find the close form formula.
 
 # ARIMA Models.py
 
