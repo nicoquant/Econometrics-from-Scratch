@@ -1,7 +1,7 @@
 # Econometrics & Statistics
 Econometrics models from scratch
 
-# Linear_models.py
+# Linear_models
 In this file, you will find an interpretation using the gradient descent technic to estimate and predict using linear, lasso and ridge regression. 
 For the linear and ridge regression, you'll also find the close form formula.
 
