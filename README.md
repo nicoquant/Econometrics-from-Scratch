@@ -2,8 +2,9 @@
 Econometrics models from scratch
 
 # Linear_models
-In this file, you will find an interpretation using the gradient descent technique to estimate and predict using linear, lasso and ridge regression. 
+In this file, you will find method to estimate and predict using linear, lasso and ridge regression. 
 For the linear and ridge regression, you'll also find the close form formula.
+Many optimization techniques are available. However the tuning of the hyperparameters is not !
 
 # ARIMA Models.py
 
